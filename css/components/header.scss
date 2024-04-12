@@ -1,0 +1,29 @@
+.header{
+    padding: 1.5rem 2%;
+    border-bottom: 2px solid $grayColor;
+    .header__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .logo__black{
+            width: 100px;
+            height: 18px;
+        }
+        .nav__list{
+            display: flex;
+            gap: 10px;
+            .nav__link{
+                color: $grayColor;
+                font-size: $mediumFontSize;
+                text-transform: uppercase;
+                font-weight: bold;
+                transition: .4s;
+                &:hover{
+                    color: $blueColor;
+                }
+            }
+        }
+    }
+    
+}

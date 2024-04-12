@@ -1,0 +1,38 @@
+.hero{
+    position: relative;
+    height: 100vh;
+    background-image: url('../../image/konstruct-hero-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .logo{
+        position: absolute;
+        top: 6%;
+
+    }
+    .hero__desc{
+        color: #fff;
+        font-size: 18px;
+    }
+    .scroll__btn{
+        position: absolute;
+        bottom: 6%;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 2px;
+        transition: .4s;
+        &:hover{
+            color: $blueColor;
+        }
+    }
+}
+.hero__title{
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+}

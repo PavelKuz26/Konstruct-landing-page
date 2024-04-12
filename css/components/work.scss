@@ -1,0 +1,15 @@
+.work{
+    height: 70vh;
+    background-image: url('../../image/get-in-touch.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .work__title{
+        font-size: 50px;
+        margin-bottom: 36px;
+    }
+}

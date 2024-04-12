@@ -1,0 +1,24 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+// Colors
+$bodyColor: #f2f2f2;
+$blueColor: #00A4E5;
+$grayColor: #48555B;
+$lightBlackColor: #141A20;
+$darkBlackColor: #171819;
+
+//roots
+$smallFontSize: 11px;
+$mediumFontSize: 13px;
+$bigFontSize: 20px;
+
+//Components
+@import './layout.scss';
+@import './hero.scss';
+@import './header.scss';
+@import './about.scss';
+@import './services.scss';
+@import './work.scss';
+@import './form.scss';
+@import './footer.scss';

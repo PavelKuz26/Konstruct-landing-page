@@ -1,0 +1,62 @@
+.about{
+    padding-top: 60px;
+    margin-bottom: 100px;
+    .about__title{
+        margin-bottom: 60px;
+    }
+    .about__content{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .about__col{
+            &--left{
+                max-width: 500px;
+            }
+            &--right{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .about__content__title{
+                margin-bottom: 30px;
+                font-size: $bigFontSize;
+                span{
+                    color: $blueColor;
+                }
+            .about__desc{
+                font-size: $mediumFontSize;
+            }
+            }
+            .about__img{
+                position: relative;
+                width: 140px;
+                height: 220px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                &--1{
+                    background-image: url('../../image/build.png');
+                }
+                &--2{
+                    background-image: url('../../image/plan.png');
+                }
+                &--3{
+                    background-image: url('../../image/manege.png');
+                }
+                .about__text{
+                    position: absolute;
+                    top: 15px;
+                    left: 14px;
+                    color: #fff;
+                    font-size: 24px;
+                    font-weight: bolder;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        
+    }
+}
+
+

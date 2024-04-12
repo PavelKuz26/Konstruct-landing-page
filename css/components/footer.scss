@@ -1,0 +1,89 @@
+.footer{
+    background-color: $lightBlackColor;
+    color: #fff;
+    .footer__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 50px 0px;
+        .footer__col{
+            display: flex;
+            flex-direction: column;
+            &--center{
+                align-self: center;
+            }
+            .footer__title{
+                text-transform: uppercase;
+                font-size: $mediumFontSize;
+                margin-bottom: 20px;
+                font-weight: 400;
+            }
+            .logo__footer{
+                margin-bottom: 16px;
+            }
+            .footer__desc{
+                max-width: 350px;
+                font-size: 11px;
+                line-height: 1.7;
+            }
+            .footer__links{
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                .footer__link{
+                    color: #fff;
+                    font-size: 11px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    transition: .4s;
+                    &:hover{
+                        color: $blueColor;
+                    }
+                }
+            }
+            .footer__info{
+                display: flex;
+                flex-direction: column;
+                row-gap: 15px;
+                .footer__info__links{
+                    color: #fff;
+                    font-size: 11px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    transition: .4s;
+                    &:hover{
+                        color: $blueColor;
+                    }
+                }
+            }
+            .footer__col__contacts{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                row-gap: 15px;
+                .contacts__phone,
+            .contacts__mail{
+                font-size: 11px;
+                font-weight: 300;
+                color: #fff;
+            }
+            }
+        }
+        .socials__list{
+            display: flex;
+            align-items: center;
+            align-self: center;
+            gap: 36px;
+            .socials__link:hover .socials__img{
+                filter: grayscale(0);
+            }
+            .socials__img{
+                width: 16px;
+                height: 16px;
+                filter: grayscale(1);
+            }
+        }
+    }
+}
