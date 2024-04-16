@@ -55,6 +55,13 @@ ul {
 .container {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 2%;
+}
+
+.nav__toggle,
+.close__btn {
+  display: none;
+  cursor: pointer;
 }
 
 .btn {
@@ -141,6 +148,10 @@ ul {
   width: 100px;
   height: 18px;
 }
+.header .header__container .navigation {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 .header .header__container .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,6 +187,11 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media (max-width: 560px) {
+  .about .about__content {
+    row-gap: 20px;
+  }
+}
 .about .about__content .about__col--left {
   max-width: 500px;
 }
@@ -189,6 +205,13 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 20px;
+}
+@media (max-width: 560px) {
+  .about .about__content .about__col--right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .about .about__content .about__col .about__content__title {
   margin-bottom: 30px;
@@ -389,7 +412,7 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 50px;
-  padding: 50px 0px;
+  padding: 50px 2%;
 }
 .footer .footer__container .footer__col {
   display: -webkit-box;
@@ -501,4 +524,50 @@ ul {
   height: 16px;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
+}
+
+@media (max-width: 560px) {
+  .navigation {
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    width: 70%;
+    height: 100%;
+    background-color: hsla(228, 24%, 6%, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    z-index: 1;
+  }
+  .navigation .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 3rem;
+  }
+  .show__menu {
+    right: 0;
+  }
+  .nav__toggle,
+  .close__btn {
+    display: block;
+    font-size: 22px;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+  }
+  .nav__toggle:hover,
+  .close__btn:hover {
+    color: #00A4E5;
+  }
+  .close__btn {
+    position: absolute;
+    top: 0;
+    right: 2rem;
+  }
 }

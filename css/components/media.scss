@@ -1,0 +1,36 @@
+@media (max-width: 560px){
+    .navigation{
+        position: fixed;
+        top: 0;
+        right: -1000px;
+        width: 70%;
+        height: 100%;
+        background-color: hsla(228, 24%, 6%, .2);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        z-index: 1;
+        .nav__list{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 3rem;
+        }
+    }
+    .show__menu{
+        right: 0;
+    }
+    .nav__toggle,
+    .close__btn{
+        display: block;
+        font-size: 22px;
+        transition: color .4s;
+        &:hover{
+            color: $blueColor;
+        }
+    }
+    .close__btn{
+        position: absolute;
+        top: 0;
+        right: 2rem;
+    }
+}

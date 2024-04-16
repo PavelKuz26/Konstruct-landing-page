@@ -10,6 +10,9 @@
             width: 100px;
             height: 18px;
         }
+        .navigation{
+            transition: .5s;
+        }
         .nav__list{
             display: flex;
             gap: 10px;
